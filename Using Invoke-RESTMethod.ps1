@@ -1,5 +1,5 @@
-$AppId = ''
-$AppSecret = 'AppSecret'
+$AppId = '1c9a8f98-a716-4aa5-ac55-639f5c5ef88d'
+$AppSecret = 'Client Secret'
 
 $Scope = "https://graph.microsoft.com/.default"
 
