@@ -7,7 +7,7 @@ The main difference between the two scripts is the method used to access Microso
 
 - MicrosoftGraphREST.ps1 uses the "Invoke-RestMethod" cmdlet to call HTTP methods against the Microsoft Graph API
 
-Both scripts require an Azure AD Application Service Principal that is assigned any of the following roles:
+Both scripts require the registration of an Azure AD Application and assigning its Service Principal at least one of the following roles:
 
 - Authentication Administrator 
 - Privileged Authentication Administrator
