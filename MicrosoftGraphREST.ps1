@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-This script uses the Microsoft Graph API to set a user's authentication phone method in Azure AD
+This script calls HTTP REST methods against the Microsoft Graph API to set a user's authentication phone method in Azure AD
 
 .EXAMPLE
 .\userAuthenticationPhoneMethod_REST.ps1 -TenantID '9a2866fd-a1ce-4f8f-afcc-2143e2bf92bf' -ApplicationID '1c9a8f98-a716-4aa5-ac55-639f5c5ef88d' -ApplicationSecret 'Client Secret' -UserPrincipalName 'clouduser@scrapaper.ca' -PhoneNumber '+1 6132218900' -PhoneType 'mobile'
@@ -41,9 +41,9 @@ Param(
 	[String]
 	$PhoneNumber,
 	[Parameter(Mandatory=$true)]
-    [ValidateSet("mobile", "alternateMobile", "office")]
-    [String]
-    $PhoneType
+	[ValidateSet("mobile", "alternateMobile", "office")]
+	[String]
+	$PhoneType
 )
 
 $Scope = "https://graph.microsoft.com/.default"
