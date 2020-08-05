@@ -1,4 +1,4 @@
-# Configuring the User Authentication Phone Method in Azure AD using Microsoft Graph
+# Configuring the User Authentication Phone Method in Azure AD
 This repo contains two PowerShell scripts that can be used to set the user's authentication phone method in Azure Active Directory using Microsoft Graph.
 
 The main difference between the two scripts is the method used to access Microsoft Graph:
