@@ -19,3 +19,5 @@ In addition to the above roles, the Azure AD application must be granted the fol
 - UserAuthenticationMethod.Read.All
 - UserAuthenticationMethod.ReadWrite
 - UserAuthenticationMethod.ReadWrite.All
+
+For more information, please refer to the following article: https://docs.microsoft.com/en-us/graph/authenticationmethods-get-started
