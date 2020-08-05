@@ -92,7 +92,7 @@ $Body = @"
 }
 "@
 
-# Create a new user authentication phone method
+# Create a new user authentication phone method if one does not exist
 if (-not $authenticationPhoneMethodId)
 {
 	$Uri = "https://graph.microsoft.com/beta/users/$UserPrincipalName/authentication/phoneMethods"
