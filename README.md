@@ -5,7 +5,7 @@ The main difference between the two scripts is the method used to access Microso
 
 - MicrosoftGraphPSModule.ps1 uses the "Get-MgUserAuthenticationPhoneMethod" cmdlet, which is available as part of the "Microsoft.Graph.Identity.AuthenticationMethods" module
 
-- MicrosoftGraphREST.ps1 uses the "Invoke-RestMethod" cmdlet to call HTTP methods against the Microsoft Graph API
+- MicrosoftGraphREST.ps1 uses the "Invoke-RestMethod" cmdlet to call HTTP REST methods against the Microsoft Graph API
 
 Both scripts require the registration of an Azure AD Application and assigning its Service Principal at least one of the following roles:
 
