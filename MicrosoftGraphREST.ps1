@@ -6,17 +6,22 @@ This script calls HTTP REST methods against the Microsoft Graph API to set a use
 .\userAuthenticationPhoneMethod_REST.ps1 -TenantID '9a2866fd-a1ce-4f8f-afcc-2143e2bf92bf' -ApplicationID '1c9a8f98-a716-4aa5-ac55-639f5c5ef88d' -ApplicationSecret 'Client Secret' -UserPrincipalName 'clouduser@scrapaper.ca' -PhoneNumber '+1 6132218900' -PhoneType 'mobile'
 
 .PARAMETER TenantID
+The id of the Azure AD directory or tenant to connect to.
 
 .PARAMETER ApplicationID
+The client ID of your application
 
 .PARAMETER ApplicationSecret
+The client secret of your application
 
 .PARAMETER UserPrincipalName
+The UPN of the user whose phone authentication method will be set
 
 .PARAMETER PhoneNumber 
+The authentication phone number to be used in the following format: +[CountryCode] [AreaCode][PhoneNumber], e.g. +1 6132904620
 
 .PARAMETER PhoneType
-
+The authentication phone type to be used, e.g. mobile
 #>
 
 Param(
